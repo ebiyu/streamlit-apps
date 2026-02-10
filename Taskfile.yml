@@ -1,0 +1,6 @@
+version: 3
+
+tasks:
+  run:
+    desc: Run the Streamlit application
+    cmd: uv run streamlit run main.py --server.port 8502
