@@ -825,10 +825,25 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "streamlit" },
+    { name = "streamlit-stl" },
+    { name = "trimesh" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "streamlit", specifier = ">=1.54.0" }]
+requires-dist = [
+    { name = "streamlit", specifier = ">=1.54.0" },
+    { name = "streamlit-stl", specifier = ">=0.0.6" },
+    { name = "trimesh", specifier = ">=4.11.1" },
+]
+
+[[package]]
+name = "streamlit-stl"
+version = "0.0.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/3d/dd/4abcd57203bb8dd4c5d7bb11dab8168e7e1a1f809085a9b9bb9dc630aa6d/streamlit_stl-0.0.6.tar.gz", hash = "sha256:3d98fe0f2b92d24b3ee69ddd548fc71f6c2c9175f8bca8a1b78eed3230f67357", size = 182528, upload-time = "2024-12-28T16:46:21.449Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5a/cf/73df3dc3b2d2cc02cf59892667dc4c68d1d169a6d15bdac6c9b1d4f64638/streamlit_stl-0.0.6-py3-none-any.whl", hash = "sha256:a7c2bdff758d72aaa3a478f84544fc0e3670e5c2c5afec2139c6c28f548494f1", size = 184003, upload-time = "2024-12-28T16:46:18.832Z" },
+]
 
 [[package]]
 name = "tenacity"
@@ -865,6 +880,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/0c/1a/d7592328d037d36f2d2462f4bc1fbb383eec9278bc786c1b111cbbd44cfa/tornado-6.5.4-cp39-abi3-win32.whl", hash = "sha256:1768110f2411d5cd281bac0a090f707223ce77fd110424361092859e089b38d1", size = 446481, upload-time = "2025-12-15T19:21:00.008Z" },
     { url = "https://files.pythonhosted.org/packages/d6/6d/c69be695a0a64fd37a97db12355a035a6d90f79067a3cf936ec2b1dc38cd/tornado-6.5.4-cp39-abi3-win_amd64.whl", hash = "sha256:fa07d31e0cd85c60713f2b995da613588aa03e1303d75705dca6af8babc18ddc", size = 446886, upload-time = "2025-12-15T19:21:01.287Z" },
     { url = "https://files.pythonhosted.org/packages/50/49/8dc3fd90902f70084bd2cd059d576ddb4f8bb44c2c7c0e33a11422acb17e/tornado-6.5.4-cp39-abi3-win_arm64.whl", hash = "sha256:053e6e16701eb6cbe641f308f4c1a9541f91b6261991160391bfc342e8a551a1", size = 445910, upload-time = "2025-12-15T19:21:02.571Z" },
+]
+
+[[package]]
+name = "trimesh"
+version = "4.11.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4c/6e/e905f84b31e6f3a7957f26a91c6d2c6337def5a888e55ac89fe2b790241b/trimesh-4.11.1.tar.gz", hash = "sha256:9a10040ca5d1c4438e0b7af94433edf6b043f5204393fc97bb85c9159a8bf21e", size = 835062, upload-time = "2026-01-17T16:38:02.67Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b0/be/69fffc97b78f52a5d1372e5d56a0599291e96996a47089fb6312bc023d88/trimesh-4.11.1-py3-none-any.whl", hash = "sha256:bcc082ced94610ecd2c09b031431d0f3ad74352525e23a41b5688a2897b3e3e0", size = 740352, upload-time = "2026-01-17T16:38:00.716Z" },
 ]
 
 [[package]]

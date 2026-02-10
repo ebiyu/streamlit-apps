@@ -6,4 +6,6 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "streamlit>=1.54.0",
+    "streamlit-stl>=0.0.6",
+    "trimesh>=4.11.1",
 ]
